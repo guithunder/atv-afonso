@@ -1,13 +1,75 @@
-body{
-    background: rgb(175, 172, 155);
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Centralização total da página */
+body{
+    background: linear-gradient(135deg, rgb(175, 172, 155), rgb(140, 137, 120));
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Título */
+h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Subtítulo */
+h3{
+    margin: 20px 0;
+    font-weight: normal;
+}
+
+/* Imagem estilizada */
+img{
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+/* Efeito ao passar o mouse */
+img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+/* Botão melhorado */
 button{
     background: black;
     color: white;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 12px;
+    padding: 15px 25px;
     font-size: 20px;
     border: none;
     cursor: pointer;
+    margin-top: 20px;
+
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* Hover do botão */
+button:hover{
+    background: #222;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* Efeito ao clicar */
+button:active{
+    transform: scale(0.95);
 }

@@ -3,33 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>libra negona</title>
-    <link rel="icon" type="image/png" href="/libras/negona-silent-hill.gif">
+    <title>Libra Negona</title>
+
+    <link rel="icon" type="image/png" href="libras/negona-silent-hill.gif">
     <link rel="stylesheet" href="/css/INdex.css">
-   
 </head>
+
 <body>
 
-  <h2>Libra Negona</h2>
+  <main class="container">
 
-  <img src="libras/negona-silent-hill.gif" width="300">
+    <h1>Libra Negona</h1>
 
-  <h3>Aceitas a chave da libra?</h3>
+    <div class="imagem-container">
+      <img 
+        src="libras/negona-silent-hill.gif" 
+        alt="Imagem Libra Negona"
+      >
+    </div>
 
-  <button onclick="tocarAudio()">🔊 Tocar Áudio</button>
+    <p class="pergunta">Aceitas a chave da libra?</p>
 
-  <audio id="meuAudio">
-      <source src="audio/nossa-esturado-seu-madruga.mp3" type="audio/mpeg">
-      Seu navegador não suporta áudio.
-  </audio>
+    <button class="botao-audio" onclick="tocarAudio()">
+      🔊 Tocar Áudio
+    </button>
+
+    <audio id="meuAudio">
+        <source src="audio/nossa-esturado-seu-madruga.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+  </main>
 
   <script>
     function tocarAudio() {
-      var audio = document.getElementById("meuAudio");
+      const audio = document.getElementById("meuAudio");
       audio.play();
     }
   </script>
 
-</body>
 </body>
 </html>
