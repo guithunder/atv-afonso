@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>libra negona</title>
+    <link rel="icon" type="image/png" href="/libras/negona-silent-hill.gif">
+    <link rel="stylesheet" href="/css/INdex.css">
+   
+</head>
+<body>
+
+  <h2>Libra Negona</h2>
+
+  <img src="libras/negona-silent-hill.gif" width="300">
+
+  <h3>Aceitas a chave da libra?</h3>
+
+  <button onclick="tocarAudio()">🔊 Tocar Áudio</button>
+
+  <audio id="meuAudio">
+      <source src="audio/nossa-esturado-seu-madruga.mp3" type="audio/mpeg">
+      Seu navegador não suporta áudio.
+  </audio>
+
+  <script>
+    function tocarAudio() {
+      var audio = document.getElementById("meuAudio");
+      audio.play();
+    }
+  </script>
+
+</body>
+</body>
+</html>
